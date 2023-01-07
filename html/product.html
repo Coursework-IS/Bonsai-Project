@@ -4,9 +4,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products</title>
+    <link rel="stylesheet" type="text/css" href="./../css/nav.css"/>
+    <link rel="stylesheet" type="text/css" href="./../css/card.css"/>
+
+    <style>
+        .cartPopUp{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #f05179;
+            width: 35%;
+            padding: 10px;
+            border-radius: 15px;
+            margin: auto;
+            height: 50vh;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+        .hidden{
+            display: none;
+        }
+        #productContainer{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        
+    </style>
 </head>
 <body>
+        <!-- Using a nav tag to create a menu-->
+    <nav id="navigation" class="navContainer pageSpacing" style="background: none;">
+
+        <div class="navLogo">
+            <a href="./index.html" style="background: none;"><img src="./../assets/icons/logo.png" height="58" width="58" style="cursor: pointer;"/></a>
+            <p style="font-weight: 400;font-size: 24px;margin-left: 4px;color: #FF0484;cursor: pointer;">E-Commerce</p>
+        </div>
     
+        <div class="navMenu">
+                <!-- Using list elements for displaying menu -->
+            <ul class="menuItem">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="#" style="color: white;">Products</a></li>
+                <li><a href="./reference.html">References</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Discount sticker  -->
+    <div id="sticker" style="background: #2F3542;display: flex;align-items: center;justify-content: space-between;padding: 10px;">
+        <p style="font-size: larger;background: none;flex: 1; text-align: center;">Use code HFE2K3# to get additional discount</p>
+        <img height="16" width="16" src="./../assets/icons/cross.png" style="background: none;cursor: pointer; margin-right: 2px;" onclick="closeSticker()"/>
+    </div>
+
+    <!-- Pop Up  -->
+    <div id="popup" class="cartPopUp hidden">
+        <h1 style="background: none">Added to the cart</h1>
+        <h2 style="margin-top: 10px;background: none;" class="popUpTitle">Product: Azalea</h2>
+        <h3 style="margin-top: 10px;background: none;" class="popUpPrice">Price:$125</h3>
+        <button class="button" style="margin-top: 20px;" onclick="closePopUp()">Close</button>
+    </div>
+
+    <!-- Product Section -->
+    <section id="products">
+        <h1 style="text-align: center;margin-top: 20px;font-size: 36px;color: #FF0484;font-weight: 400;">Our Products</h1>
+        <div id="productContainer" class="pageSpacing">
+        </div>
+
+    </section>
+
+    <!-- Using external script -->
+    <script src="./../javascript/products.js"></script>
+    <script src="./../javascript/nav.js"></script>
+
+    <!-- Internal script  -->
+    <script>
+        // at first popup is not opened
+        var isOpen = false;
+
+        // accessing corressponding elements from html.
+        const sticker = document.getElementById('sticker');
+        const popup = document.getElementById('popup');
+        const menu = document.getElementById('navigation')
+        const products = document.getElementById('products')
+        const popUpTitle = document.querySelector('.popUpTitle');
+        const popUpPrice = document.querySelector('.popUpPrice');
+ 
+        // getting body reference to handle clicks anywhere on the body
+        var body = document.getElementsByTagName("BODY")[0];
+
+
+        // removing sticker.
+        function closeSticker(){
+            sticker.style.display = "none"
+            alert("Cancel!")
+        }
+
+
+        // function removePopUp() {
+        //     if(isOpen){
+        //         popup.classList.add('hidden')
+        //         menu.style.opacity = 1;
+        //         products.style.opacity = 1;
+        //         sticker.style.opacity = 1;
+        //         isOpen = false;
+        //     }
+        //     body.removeEventListener("click",removePopUp)
+        // }
+
+        function openPopUp(name,price){
+
+            isOpen = true;
+            
+            popup.classList.remove('hidden')
+            menu.style.opacity = 0.5;
+            products.style.opacity = 0.5;
+            sticker.style.opacity = 0.5;
+            popUpPrice.innerHTML = `Price: ${price}`
+            popUpTitle.innerHTML = `Product: ${name}`
+
+            // click event listener is added after popup is opened in order to remove popup while clicking anywhere on the body
+            // eventlistener is added inside setTimeout otherwise, popup will be opened and closed at the the same time.
+            setTimeout(() => {
+                body.addEventListener("click",closePopUp)
+            }, 500);
+        }
+
+        function closePopUp(){
+            popup.classList.add('hidden')
+            menu.style.opacity = 1;
+            products.style.opacity = 1;
+            sticker.style.opacity = 1;
+            isOpen = false;
+
+            // after the popup is closed removing the eventlistener as we don't need it anymore.
+            body.removeEventListener("click",closePopUp)
+
+        }
+
+
+    </script>
 </body>
 </html>

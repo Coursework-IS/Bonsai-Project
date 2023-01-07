@@ -1,0 +1,86 @@
+*{
+    /* Setting default margin and padding of the page to zero */
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+   
+}
+html{
+    /* to create smooth scroll behaviour */
+    scroll-behavior: smooth;
+}
+/* to add constant space and mmargin for web components */
+.pageSpacing{
+    padding: 10px;
+    margin-top: 20px;
+}
+.fixNavbar{
+    /* to fix the navbar at the top of the page */
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    background: #1B1B1B !important;
+    top: 0 ;
+    transition: ease-in-out 1s;
+}
+.navContainer{
+    /* seeting nav container to flex so that the elements inside can be arranged properly. */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: ease 1s;
+}
+.navLogo{
+    flex: 0.5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background: none;
+}
+.navMenu{
+    flex: 0.5;
+    background: none;
+}
+.navMenu  ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background: none;
+    transition: ease 0.5s;
+}
+ul li{
+    margin-right: auto;
+    background: none;
+}
+ul > li > a{
+    color: #A92367;
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    transition: all 0.7s;
+}
+ul > li > a:hover{
+    color: #fc5c65;
+}
+
+.button{
+    border: none;
+    background: none;
+    font-size: 24px;
+    background: #B33771;
+    padding: 14px;
+    cursor: pointer;
+}
+.button:hover{
+    background: #B33771;
+    opacity: 0.6;
+    color: #000000;
+    transition: all 0.5s ease-in-out;
+}

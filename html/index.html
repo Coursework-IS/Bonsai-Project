@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add meta tag -->
+    <link rel="stylesheet" type="text/css" href="./../css/nav.css"/>
+    <title>Home</title>
+    <style>
+        .landingContainer{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+
+        }
+        .landingImage{
+            /* Dividing 50% of the screen for the image */
+            flex: 0.5;
+        }
+        .landingImageBackground{
+            border: none;
+            border-radius: 50%;
+            height: 450px;
+            width: 450px;
+            background-color: #FF6B81;
+            /* decresing the opacity of the image background */
+            opacity: 0.25;
+
+            /* making image background relative so that image can be placed above it. */
+            position: relative;
+        }
+        .coverImage{
+            /* placing image above the background */
+            position: absolute;
+            background: none;
+
+            top: 25%;
+            left: 4%;
+            right: 0%;
+        }
+        .landingText{
+            flex: 0.5;;
+        }
+        .highlight{
+            color: #FC427B;
+            font-size: 56px;
+            font-weight: 500;
+        }
+
+        .pageDescriptionContainer{
+            margin: 0 40px;
+            padding: 20px;
+            background: #2F3542;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .pageTitle{
+            background: none;
+            text-align: center;
+            margin-top: 10px 0;
+        }
+        .pageContent{
+            background: none;
+            text-align: left;
+            margin: 40px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <!-- Using a nav tag to create a menu-->
+    <nav id="navigation" class="navContainer pageSpacing" style="background: none;">
+
+        <div class="navLogo">
+            <a href="./index.html" style="background: none;"><img src="./../assets/icons/logo.png" height="58" width="58" style="cursor: pointer;background: none;"/></a>
+            <p style="font-weight: 400;font-size: 24px;margin-left: 4px;color: #FF0484;cursor: pointer;background: none;">E-Commerce</p>
+        </div>
+
+        <div class="navMenu">
+            <!-- Using list elements for displaying menu -->
+            <ul class="menuItem">
+                <li><a href="#" style="color: white;">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- This is section which holds images for the landing page. -->
+    <section class="pageSpacing">
+        <div class="landingContainer">
+            <div class="landingImage">
+                <div class="landingImageBackground">
+                </div>
+                    <img class="coverImage" height="350" width="350" src="./../assets/icons/coverImg.png"/>
+            </div>
+            <div class="landingText">
+                <h1 style="font-size: 36px;">Welcome to our bonsi marketplace</h1>
+                <p style="font-size: 42px;margin-top: 20px;">A <span class="highlight">Bonsi</span> hub</p>
+                <button class="button" style="margin-top: 35px;" type="button">View More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- This section holds the brief description of each pages -->
+    <section class="pageSpacing">
+        <div id="about" class="pageDescriptionContainer">
+            <h1 class="pageTitle">About</h1>
+            <p class="pageContent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam recusandae alias error harum maxime adipisci amet laborum
+            </p>
+            <button class="button" type="button"><a href="./about.html" style="text-decoration: none;background: none;">View More</a></button>
+        </div>
+        <div id="blog" class="pageDescriptionContainer">
+            <h1 class="pageTitle">Blog</h1>
+            <p class="pageContent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam recusandae alias error harum maxime adipisci amet laborum
+            </p>
+            <button class="button" type="button"><a href="./blog.html" style="text-decoration: none;background: none;">View More</a></button>
+        </div>
+        <div id="products" class="pageDescriptionContainer">
+            <h1 class="pageTitle">Products</h1>
+            <p class="pageContent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam recusandae alias error harum maxime adipisci amet laborum
+            </p>
+            <button class="button" type="button"><a href="./product.html" style="text-decoration: none;background: none;">View More</a></button>
+        </div>
+        <div id="references" class="pageDescriptionContainer">
+            <h1 class="pageTitle">References</h1>
+            <p class="pageContent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam recusandae alias error harum maxime adipisci amet laborum
+            </p>
+            <button class="button" type="button"><a href="./reference.html" style="text-decoration: none;background: none;">View More</a></button>
+        </div>
+    </section>
+    <script src="./../javascript/nav.js"></script>
+</body>
+</html>
