@@ -7,6 +7,7 @@
     <title>Products</title>
     <link rel="stylesheet" type="text/css" href="./../css/nav.css"/>
     <link rel="stylesheet" type="text/css" href="./../css/card.css"/>
+    <link rel="stylesheet" type="text/css" href="./../css/footer.css"/>
 
     <style>
         .cartPopUp{
@@ -21,7 +22,7 @@
             margin: auto;
             height: 50vh;
 
-            position: absolute;
+            position: fixed;
             top: 0;
             bottom: 0;
             left: 0;
@@ -86,6 +87,52 @@
 
     </section>
 
+        <!-- Button to scroll to the top -->
+    <div class="arrowTop hidden">
+        <a href="#" style="background: none;"><img src="./../assets/icons/arrow.png" style="background: none;height: 16px;width: 16px;"/></a>
+    </div>
+    
+     <!-- Footer -->
+     <div class="footerContainer">
+        <div class="footerTop">
+            <div class="iconBox">
+                <img src="./../assets/icons/placeholder.png" height="32" width="32"/>
+                <p>Lazimpat,Kathmandu</p>
+            </div>
+            <div class="iconBox">
+                <img src="./../assets/icons/play.png" height="32" width="32"/>
+                <p>Get our app</p>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="footerMiddle">
+            <div class="footerLinks">
+                <p style="font-size: 32px;font-weight: 600;">Site Links</p>
+                <ul class="linksList">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./reference.html">References</a></li>
+                </ul>
+            </div>
+            <div class="footerNewsletter">
+                <div class="letterBox">
+                    <p style="font-size: 24px; background: none;font-weight: 500;">Subscribe to our news letter</p>
+                    <input type="email" placeholder="Enter email" class="inputBox"/>
+                    <button type="submit" class="button" style="background: #487EB0;width: 20%;border-radius: 10px;">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="footerBottom">
+            <p style="text-align: center;font-size: 24px;">&copy 2023 <span style="font-weight: 600;">Bonzi-Verse</span>. All rights reserved.</p>
+        </div>
+    </div>
     <!-- Using external script -->
     <script src="./../javascript/products.js"></script>
     <script src="./../javascript/nav.js"></script>
