@@ -25,6 +25,7 @@ html{
     background: #1B1B1B !important;
     top: 0 ;
     transition: ease-in-out 1s;
+    z-index: 999;
 }
 .navContainer{
     /* seeting nav container to flex so that the elements inside can be arranged properly. */
@@ -83,4 +84,27 @@ ul > li > a:hover{
     opacity: 0.6;
     color: #000000;
     transition: all 0.5s ease-in-out;
+}
+
+.hidden{
+    display: none;
+    transition: all ease-in-out 0.5s;
+}
+.arrowTop{
+    text-align: center;
+
+    position: fixed;
+    background: #fbc531;
+    bottom: 35px;
+    right: 20px;
+    height: 22px;
+    width: 22px;
+    padding: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+.arrowTop:hover{
+    background: #e1b12c;
+    opacity: 0.7;
 }
