@@ -9,7 +9,7 @@ const data = [{title:'Azalea',description:'Here is the description',image:'azale
                 {title:'Weeping Fig',description:'Here is the descriptionx',image:'weeping-fig.jpg',price:'105',originalPrice:'200'},
 ]
 
-// accesing corresponding element from html 
+// accessing corresponding element from html 
 const image = document.querySelector(".image");
 const title = document.querySelector('.productTitle');
 const description = document.querySelector('.productDescription');
