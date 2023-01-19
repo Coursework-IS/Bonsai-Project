@@ -17,15 +17,33 @@ const price = document.querySelector('.priceContainer')
 
 const productContainer = document.getElementById('productContainer')
 
+
+
+
+var cart = [];
+
+
+const addToTheCart = (index) => {
+    const cartItem = data[index];
+    cart.push(cartItem);
+    const cartArray = JSON.stringify(cart);
+
+    console.log(index)
+
+    if(typeof(window) != undefined){
+        window.localStorage.setItem("cart",cartArray);
+    } 
+}
+
+
 // path which holds the images for the products.
 const path = "./../assets/productImages"
-
 
 /**
  * map is being used to traverse through elements from the array 
  * and it returns the table tag which holds product data .
  */
-productContainer.innerHTML = data.map(item => {
+productContainer.innerHTML = data.map((item,index) => {
     return (`
     <table>
     <tr><td colspan="2"><img src="./../assets/productImages/${item.image}" class="productImage"/></td></tr>
@@ -33,13 +51,23 @@ productContainer.innerHTML = data.map(item => {
     <tr><td colspan="2"><p class="productDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiut aliquip ex ea commodo consequat. Duis aute irure dt non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></td></tr>
     <tr class="buttonsContainer">
         <td><div class="priceContainer"><s class="originalPrice">$${item.originalPrice}</s><p class="discountedPrice">$${item.price}</p></div></td>
-        <td><div class="addToCart" onclick="openPopUp('${item.title}','${item.price}')">Add to Cart</div></td>
+        <td><div class="addToCart" onclick="openPopUp('${item.title}','${item.price}');addToTheCart('${index}')">Add to Cart</div></td>
     </tr>
     </table>
     `)
 }).join("");
 /* join("") is chained at the end of map(), since map return array the elements are separated by comma 
 and join("") adds nothing between the array elements.*/
+
+
+
+const loadCart = () => {
+    const array = window.localStorage.getItem("cart")
+    cart = JSON.parse(array).map((item) => item);
+    console.log("load"+cart)
+}
+loadCart()
+
 
 
 
