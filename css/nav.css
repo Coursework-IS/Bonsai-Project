@@ -17,23 +17,29 @@ html{
     padding: 10px;
     margin-top: 20px;
 }
-.fixNavbar{
-    /* to fix the navbar at the top of the page */
-    position: fixed;
-    padding: 10px;
-    width: 100%;
-    background: #1B1B1B !important;
-    top: 0 ;
-    transition: ease-in-out 1s;
-    z-index: 999;
-}
+
 .navContainer{
     /* seeting nav container to flex so that the elements inside can be arranged properly. */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    transition: ease 1s;
+    transition: all ease-in-out 1s;
+
+    position: sticky;
+    top: 0;
+
+    transition:all ease-in-out 0.5s;
+    z-index: 999;
+
+    
+}
+.navBackground{
+    background: #1B1B1B !important;
+}
+
+a{
+    text-decoration: none;
 }
 .navLogo{
     flex: 0.5;
