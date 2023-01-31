@@ -131,3 +131,83 @@
     cursor: pointer;
 }
 
+/* form */
+.formContainer{
+    background:#282C35 ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    height: max-content;
+}
+.formContainer h1{
+    background: none;
+    margin: 10px;
+    text-transform: capitalize;
+}
+form{
+    background: none;
+    flex: 0.5;
+}
+form label{
+    font-size: 24px;
+    background: none;
+}
+form input{
+    font-size: 22px;
+    width: 100%;
+    background: #4b4b4b;
+    margin: 13px 0px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+form textarea{
+    width: 100%;
+    margin: 20px auto;
+    background: #4b4b4b;
+}
+::placeholder{
+    color: #a4b0be;
+    padding: 10px;
+}
+.inlineDiv{
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inlineDiv > input{
+    background: none;
+    flex: 0.3;
+}
+.inlineDiv label{
+    margin-left: 10px;
+    width: 100%;
+}
+.submitButton{
+    cursor: pointer;
+    background: #ff6b81;
+    transition: all 0.5s;
+}
+.submitButton:hover{
+    background: #ff4757;
+}
+
+/* popup message */
+.messageContainer{
+    background: #747d8c;
+    margin: 20px auto;
+    padding: 20px;
+    transition: all 0.5s;
+}
+.hide{
+    visibility: hidden;
+}
+.messageContainer p{
+    background: none;
+    text-align: center;
+}
