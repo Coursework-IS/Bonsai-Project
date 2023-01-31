@@ -7,6 +7,7 @@
     <title>Blog</title>
     <link rel="stylesheet" type="text/css" href="./../css/nav.css" />
     <link rel="stylesheet" type="text/css" href="./../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/blog.css" />
   </head>
   <body>
     <!-- Using a nav tag to create a menu-->
@@ -21,9 +22,9 @@
             src="./../assets/icons/logo.png"
             height="58"
             width="58"
-            style="cursor: pointer"
+            style="cursor: pointer; background: none"
         /></a>
-        <a href="./index.html"
+        <a href="./index.html" style="background: none"
           ><p
             style="
               font-weight: 400;
@@ -31,6 +32,7 @@
               margin-left: 4px;
               color: #ff0484;
               cursor: pointer;
+              background: none;
             "
           >
             Bonzi-Verse
@@ -51,8 +53,98 @@
     </nav>
 
     <!-- Add blog contens here -->
-    <!-- Donot forget to look at other site as references and also take snip of those sites -->
     <!-- Add a video for this blog page. -->
+    <section id="blog">
+      <div class="blogCover blogSpacing">
+        <div class="coverDetails">
+          <p
+            style="
+              background: none;
+              padding: 10px;
+              border-radius: 10px;
+              background: #d1ccc0;
+            "
+          >
+            Featured Article
+          </p>
+          <a href="./article.html"
+            ><h1 style="background: none">Article title</h1></a
+          >
+          <h2 style="background: none">
+            Article short description Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Sint laborum minima necessitatibus, eni,
+            necessitatibus alias delectus rerum a itaque ea?
+          </h2>
+          <h3 style="background: none">
+            Published by
+            <span style="background: none; color: #2f3542">Anuja Gautam</span>
+            <span style="color: #747d8c; background: none">1 day ago</span>
+          </h3>
+        </div>
+      </div>
+      <div class="blogTrends blogSpacing">
+        <p style="color: #ff0484; font-size: 36px; margin: 50px 0px">
+          Trending Blogs
+        </p>
+        <div class="blogContainer">
+          <div class="blogImage">
+            <img src="./../assets/blogImages/blogCover.jpg" />
+          </div>
+          <div class="blogDetails">
+            <div class="blogTop">
+              <span style="color: #706fd3">11-Jan-2023</span
+              ><span style="color: #e74c3c">5 min read</span>
+            </div>
+            <div class="blogTitle">AI and Bonsai: tech merged with nature</div>
+            <div class="blogBody">
+              Article short description Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Sint laborum minima necessitatibus, eni,
+              necessitatibus alias delectus rerum a itaque ea?
+            </div>
+            <div class="blogAuthor">
+              by
+              <span
+                style="
+                  color: #3498db;
+                  text-transform: uppercase;
+                  font-weight: 700;
+                "
+                >Subham</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="blogContainer">
+          <div class="blogImage">
+            <img src="./../assets/blogImages/bonsai.jpg" />
+          </div>
+          <div class="blogDetails">
+            <div class="blogTop">
+              <span style="color: #706fd3">11-Jan-2023</span
+              ><span style="color: #e74c3c">5 min read</span>
+            </div>
+            <div class="blogTitle">AI and Bonsai: tech merged with nature</div>
+            <div class="blogBody">
+              Article short description Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Sint laborum minima necessitatibus, eni,
+              necessitatibus alias delectus rerum a itaque ea?
+            </div>
+            <div class="blogAuthor">
+              by
+              <span
+                style="
+                  color: #3498db;
+                  text-transform: uppercase;
+                  font-weight: 700;
+                "
+                >Subham</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <div class="footerContainer">
       <div class="footerTop">
@@ -105,5 +197,6 @@
         </p>
       </div>
     </div>
+    <script src="./../javascript/nav.js"></script>
   </body>
 </html>

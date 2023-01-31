@@ -7,6 +7,7 @@
     <title>About</title>
     <link rel="stylesheet" type="text/css" href="./../css/nav.css" />
     <link rel="stylesheet" type="text/css" href="./../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/about.css" />
   </head>
   <body>
     <!-- Using a nav tag to create a menu-->
@@ -50,8 +51,83 @@
       </div>
     </nav>
 
-    <!-- Add about contents here -->
-    <!-- Donot forget to look at other site as references and also take snip of those sites -->
+    <!-- About Sextion -->
+    <section id="about">
+      <p class="barTitle">Meet the Team</p>
+      <div class="hBar"></div>
+      <div class="aboutProfiles">
+        <div class="profileBox" id="0" onclick="setProfile(0)">
+          <img src="./../assets/profile/aayush.JPG" />
+        </div>
+        <div class="profileBox" id="1" onclick="setProfile(1)">
+          <img src="./../assets/profile/anuja.JPG" />
+        </div>
+        <div class="profileBox" id="2" onclick="setProfile(2)">
+          <img src="./../assets/profile/hishila.JPG" />
+        </div>
+        <div class="profileBox" id="3" onclick="setProfile(3)">
+          <img src="./../assets/profile/prajwol.JPG" />
+        </div>
+        <div class="profileBox active" id="4" onclick="setProfile(4)">
+          <img src="./../assets/profile/subham.jpg" />
+        </div>
+      </div>
+      <div class="profileContainer">
+        <div class="imageBox">
+          <img src="./../assets/profile/subham.jpg" />
+        </div>
+        <div class="textBox left">
+          <h1>Subham Adhikari</h1>
+          <h3>Be neither optimistic nor pessimistic.</h3>
+          <p>
+            Working with each other and sharing knowledge has given me skills to
+            work .
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popup message -->
+    <div class="messageContainer hide" id="popUpMessage">
+      <p>Message sent successfully!</p>
+    </div>
+
+    <!-- Feedback Form -->
+    <div class="formContainer">
+      <h1>
+        Provide us
+        <span style="color: #ff0484; background: none; font-weight: 800"
+          >Feedback</span
+        >
+      </h1>
+      <form action="/" name="feedbackForm" onsubmit="formValidate(event)">
+        <label>Name</label><br />
+        <input type="text" placeholder="Enter your name" name="name" /><br />
+        <label>Email</label><br />
+        <input type="email" placeholder="Enter your email" name="email" /><br />
+        <textarea
+          placeholder="Write your suggestions here"
+          rows="10"
+          name="message"
+        ></textarea
+        ><br />
+        <label style="margin-top: 20px">Gender: </label><br />
+        <div class="inlineDiv">
+          <input type="radio" name="gender" value="male" checked />
+          <label>Male</label><br />
+        </div>
+        <div class="inlineDiv">
+          <input type="radio" name="gender" value="female" />
+          <label>Female</label><br />
+        </div>
+        <div class="inlineDiv" style="margin-top: 20px">
+          <input type="checkbox" name="checkbox" />
+          <label>I agree to send message through my email</label>
+        </div>
+        <input class="submitButton" type="submit" value="Send" />
+      </form>
+    </div>
+
     <!-- Footer -->
     <div class="footerContainer">
       <div class="footerTop">
@@ -104,5 +180,8 @@
         </p>
       </div>
     </div>
+    <script src="./../javascript/nav.js"></script>
+    <script src="./../javascript/about.js"></script>
+    <script src="./../javascript/form.js"></script>
   </body>
 </html>
