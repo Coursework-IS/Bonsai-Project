@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="author"
+      content="Hishila Chaulane,Anuja Gautam,Aayush Acharya"
+    />
+    <meta
+      name="description"
+      content="This page contains the references to the the images and icons we have used."
+    />
+    <meta name="application-name" content="BonziVerse" />
+
     <title>References</title>
     <link rel="stylesheet" type="text/css" href="./../css/nav.css" />
     <link rel="stylesheet" type="text/css" href="./../css/footer.css" />
@@ -213,80 +224,56 @@
             <td>1.</td>
             <td><img src="./../assets/productImages/azalea.jpg" /></td>
             <td>
-              <a
-                href=""
-                >Getty Images</a
-              >
+              <a href="">Getty Images</a>
             </td>
           </tr>
           <tr>
             <td>2.</td>
             <td><img src="./../assets/productImages/chinese-elm.jpg" /></td>
             <td>
-              <a
-                href=""
-                >Getty Images</a
-              >
+              <a href="">Getty Images</a>
             </td>
           </tr>
           <tr>
             <td>3.</td>
             <td><img src="./../assets/productImages/dwarf-boxwood.jpg" /></td>
             <td>
-              <a
-                href=""
-                >Getty Images</a
-              >
+              <a href="">Getty Images</a>
             </td>
           </tr>
           <tr>
             <td>4.</td>
             <td><img src="./../assets/productImages/fir.jpg" /></td>
             <td>
-              <a
-                href=""
-                >Getty Images</a
-              >
+              <a href="">Getty Images</a>
             </td>
           </tr>
           <tr>
             <td>5.</td>
             <td><img src="./../assets/productImages/japanese-maple.jpg" /></td>
             <td>
-              <a
-                href=""
-                >Getty Images</a
-              >
+              <a href="">Getty Images</a>
             </td>
           </tr>
           <tr>
             <td>6.</td>
             <td><img src="./../assets/productImages/juniper.jpg" /></td>
             <td>
-              <a
-                href=""
-                >Getty Images</a
-              >
+              <a href="">Getty Images</a>
             </td>
           </tr>
           <tr>
             <td>7.</td>
             <td><img src="./../assets/productImages/pine.jpg" /></td>
             <td>
-              <a
-                href=""
-                >Getty Images</a
-              >
+              <a href="">Getty Images</a>
             </td>
           </tr>
           <tr>
             <td>8.</td>
             <td><img src="./../assets/productImages/weeping-fig.jpg" /></td>
             <td>
-              <a
-                href=""
-                >Getty Images</a
-              >
+              <a href="">Getty Images</a>
             </td>
           </tr>
         </tbody>
@@ -389,25 +376,68 @@
 
       <div class="footerMiddle">
         <div class="footerLinks">
-          <p style="font-size: 32px; font-weight: 600">Site Links</p>
-          <ul class="linksList">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./product.html">Products</a></li>
-            <li><a href="./reference.html">References</a></li>
-          </ul>
+          <div class="links" style="flex: 0.3">
+            <p style="font-size: 32px; font-weight: 600">Site Links</p>
+            <ul class="linksList">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./product.html">Products</a></li>
+              <li><a href="./reference.html">References</a></li>
+            </ul>
+          </div>
+          <div class="links" style="flex: 0.5">
+            <p
+              style="
+                font-size: 32px;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 20px;
+              "
+            >
+              Follow us on
+            </p>
+            <ul class="linksList iconList">
+              <li>
+                <a href="./index.html"
+                  ><img src="./../assets/icons/facebook.png"
+                /></a>
+              </li>
+              <li>
+                <a href="./about.html"
+                  ><img src="./../assets/icons/instagram.png"
+                /></a>
+              </li>
+              <li>
+                <a href="./blog.html"
+                  ><img src="./../assets/icons/twitter.png"
+                /></a>
+              </li>
+              <li>
+                <a href="./product.html"
+                  ><img src="./../assets//icons/reddit.png"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footerNewsletter">
           <div class="letterBox">
             <p style="font-size: 24px; background: none; font-weight: 500">
               Subscribe to our news letter
             </p>
-            <input type="email" placeholder="Enter email" class="inputBox" />
+            <input
+              type="email"
+              id="email"
+              onchange=""
+              placeholder="Enter email"
+              class="inputBox"
+            />
             <button
               type="submit"
               class="button"
               style="background: #487eb0; width: 20%; border-radius: 10px"
+              onclick="submitEmail()"
             >
               Sign Up
             </button>
