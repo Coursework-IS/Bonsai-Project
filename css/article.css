@@ -1,0 +1,78 @@
+#article{
+    background: #282C35;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 20px 40px;
+    
+}
+.articleContainer{
+    flex: 0.65;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.articleTitle{
+    background: none;
+    font-size: 42px;
+    margin: 10px 0px;
+    font-weight: 600;
+    
+     /* color: #970439; */
+    color: #f52b87;
+}
+.articleAuthor{
+    background: none;
+    font-size: 22px;
+    margin: 2px 0px;
+    font-weight: 700;
+    color: #ff1eb4;   
+}
+.articleDate{
+    background: none;
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    color: #ff1eb4; 
+}
+.articleContents{
+    background: none;
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #f900a7;
+}
+.articleShare{
+    background: none;
+    flex: 0.35;
+    margin-bottom: 10px;
+    position: sticky;
+    bottom: 50px;
+    text-align: left;
+    align-self: flex-end;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.shareText{
+    background: none;
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    color:#3498db;
+    margin-bottom: 12px;
+}
+.shareIcons{
+    background: none;
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+.shareIcons img{
+    background: none;
+    height: 32px;
+    width: 32px;
+    margin-left: auto;
+}

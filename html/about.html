@@ -1,34 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" type="text/css" href="./../css/nav.css"/>
-</head>
-<body>
-        <!-- Using a nav tag to create a menu-->
-    <nav id="about" class="navContainer pageSpacing" style="background: none;">
+    <link rel="stylesheet" type="text/css" href="./../css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/about.css" />
+  </head>
+  <body>
+    <!-- Using a nav tag to create a menu-->
+    <nav
+      id="navigation"
+      class="navContainer pageSpacing"
+      style="background: none"
+    >
+      <div class="navLogo">
+        <a href="./index.html" style="background: none"
+          ><img
+            src="./../assets/icons/logo.png"
+            height="58"
+            width="58"
+            style="cursor: pointer"
+        /></a>
+        <a href="./index.html"
+          ><p
+            style="
+              font-weight: 400;
+              font-size: 24px;
+              margin-left: 4px;
+              color: #ff0484;
+              cursor: pointer;
+            "
+          >
+            Bonzi-Verse
+          </p></a
+        >
+      </div>
 
-        <div class="navLogo">
-            <a href="./index.html" style="background: none;"><img src="./../assets/icons/logo.png" height="58" width="58" style="cursor: pointer;"/></a>
-            <p style="font-weight: 400;font-size: 24px;margin-left: 4px;color: #FF0484;cursor: pointer;">E-Commerce</p>
-        </div>
-    
-        <div class="navMenu">
-                <!-- Using list elements for displaying menu -->
-            <ul class="menuItem">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#" style="color: white;">About</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./product.html">Products</a></li>
-                <li><a href="./reference.html">References</a></li>
-            </ul>
-        </div>
+      <div class="navMenu">
+        <!-- Using list elements for displaying menu -->
+        <ul class="menuItem">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#" style="color: white">About</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./product.html">Products</a></li>
+          <li><a href="./reference.html">References</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <!-- Add about contents here -->
-    <!-- Donot forget to look at other site as references and also take snip of those sites -->
-</body>
+    <!-- About Sextion -->
+    <section id="about">
+      <p class="barTitle">Meet the Team</p>
+      <div class="hBar"></div>
+      <div class="aboutProfiles">
+        <div class="profileBox" id="0" onclick="setProfile(0)">
+          <img src="./../assets/profile/aayush.JPG" />
+        </div>
+        <div class="profileBox" id="1" onclick="setProfile(1)">
+          <img src="./../assets/profile/anuja.JPG" />
+        </div>
+        <div class="profileBox" id="2" onclick="setProfile(2)">
+          <img src="./../assets/profile/hishila.JPG" />
+        </div>
+        <div class="profileBox" id="3" onclick="setProfile(3)">
+          <img src="./../assets/profile/prajwol.JPG" />
+        </div>
+        <div class="profileBox active" id="4" onclick="setProfile(4)">
+          <img src="./../assets/profile/subham.jpg" />
+        </div>
+      </div>
+      <div class="profileContainer">
+        <div class="imageBox">
+          <img src="./../assets/profile/subham.jpg" />
+        </div>
+        <div class="textBox left">
+          <h1>Subham Adhikari</h1>
+          <h3>Be neither optimistic nor pessimistic.</h3>
+          <p>
+            Working with each other and sharing knowledge has given me skills to
+            work .
+          </p>
+          <button class="profileButton"><a href="./portfolio/subham.html">View Profile</a></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popup message -->
+    <div class="messageContainer hide" id="popUpMessage">
+      <p>Message sent successfully!</p>
+    </div>
+
+    <!-- Feedback Form -->
+    <div class="formContainer">
+      <h1>
+        Provide us
+        <span style="color: #ff0484; background: none; font-weight: 800"
+          >Feedback</span
+        >
+      </h1>
+      <form action="/" name="feedbackForm" onsubmit="formValidate(event)">
+        <label>Name</label><br />
+        <input type="text" placeholder="Enter your name" name="name" /><br />
+        <label>Email</label><br />
+        <input type="email" placeholder="Enter your email" name="email" /><br />
+        <textarea
+          placeholder="Write your suggestions here"
+          rows="10"
+          name="message"
+        ></textarea
+        ><br />
+        <label style="margin-top: 20px">Gender: </label><br />
+        <div class="inlineDiv">
+          <input type="radio" name="gender" value="male" checked />
+          <label>Male</label><br />
+        </div>
+        <div class="inlineDiv">
+          <input type="radio" name="gender" value="female" />
+          <label>Female</label><br />
+        </div>
+        <div class="inlineDiv" style="margin-top: 20px">
+          <input type="checkbox" name="checkbox" />
+          <label>I agree to send message through my email</label>
+        </div>
+        <input class="submitButton" type="submit" value="Send" />
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footerContainer">
+      <div class="footerTop">
+        <div class="iconBox">
+          <img src="./../assets/icons/placeholder.png" height="32" width="32" />
+          <p>Lazimpat,Kathmandu</p>
+        </div>
+        <div class="iconBox">
+          <img src="./../assets/icons/play.png" height="32" width="32" />
+          <p>Get our app</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footerMiddle">
+        <div class="footerLinks">
+          <div class="links" style="flex: 0.3">
+            <p style="font-size: 32px; font-weight: 600">Site Links</p>
+            <ul class="linksList">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./product.html">Products</a></li>
+              <li><a href="./reference.html">References</a></li>
+            </ul>
+          </div>
+          <div class="links" style="flex: 0.5">
+            <p
+              style="
+                font-size: 32px;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 20px;
+              "
+            >
+              Follow us on
+            </p>
+            <ul class="linksList iconList">
+              <li>
+                <a href="./index.html"
+                  ><img src="./../assets/icons/facebook.png"
+                /></a>
+              </li>
+              <li>
+                <a href="./about.html"
+                  ><img src="./../assets/icons/instagram.png"
+                /></a>
+              </li>
+              <li>
+                <a href="./blog.html"
+                  ><img src="./../assets/icons/twitter.png"
+                /></a>
+              </li>
+              <li>
+                <a href="./product.html"
+                  ><img src="./../assets//icons/reddit.png"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerNewsletter">
+          <div class="letterBox">
+            <p style="font-size: 24px; background: none; font-weight: 500">
+              Subscribe to our news letter
+            </p>
+            <input type="email" placeholder="Enter email" class="inputBox" />
+            <button
+              type="submit"
+              class="button"
+              style="background: #487eb0; width: 20%; border-radius: 10px"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footerBottom">
+        <p style="text-align: center; font-size: 24px">
+          &copy 2023 <span style="font-weight: 600">Bonzi-Verse</span>. All
+          rights reserved.
+        </p>
+      </div>
+    </div>
+    <script src="./../javascript/nav.js"></script>
+    <script src="./../javascript/about.js"></script>
+    <script src="./../javascript/form.js"></script>
+  </body>
 </html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="./../css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/cart.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/card.css" />
+  </head>
+  <body>
+    <!-- Using a nav tag to create a menu-->
+    <nav
+      id="navigation"
+      class="navContainer pageSpacing"
+      style="background: none"
+    >
+      <div class="navLogo">
+        <a href="./index.html" style="background: none"
+          ><img
+            src="./../assets/icons/logo.png"
+            height="58"
+            width="58"
+            style="cursor: pointer"
+        /></a>
+        <a href="./index.html"
+          ><p
+            style="
+              font-weight: 400;
+              font-size: 24px;
+              margin-left: 4px;
+              color: #ff0484;
+              cursor: pointer;
+            "
+          >
+            Bonzi-Verse
+          </p></a
+        >
+      </div>
+
+      <div class="navMenu">
+        <!-- Using list elements for displaying menu -->
+        <ul class="menuItem">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./product.html">Products</a></li>
+          <li><a href="./reference.html">References</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Cart section -->
+    <section id="cart" class="pageSpacing"></section>
+
+    <!-- Footer -->
+    <div class="footerContainer">
+      <div class="footerTop">
+        <div class="iconBox">
+          <img src="./../assets/icons/placeholder.png" height="32" width="32" />
+          <p>Lazimpat,Kathmandu</p>
+        </div>
+        <div class="iconBox">
+          <img src="./../assets/icons/play.png" height="32" width="32" />
+          <p>Get our app</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footerMiddle">
+        <div class="footerLinks">
+          <p style="font-size: 32px; font-weight: 600">Site Links</p>
+          <ul class="linksList">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="./reference.html">References</a></li>
+          </ul>
+        </div>
+        <div class="footerNewsletter">
+          <div class="letterBox">
+            <p style="font-size: 24px; background: none; font-weight: 500">
+              Subscribe to our news letter
+            </p>
+            <input type="email" placeholder="Enter email" class="inputBox" />
+            <button
+              type="submit"
+              class="button"
+              style="background: #487eb0; width: 20%; border-radius: 10px"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footerBottom">
+        <p style="text-align: center; font-size: 24px">
+          &copy 2023 <span style="font-weight: 600">Bonzi-Verse</span>. All
+          rights reserved.
+        </p>
+      </div>
+    </div>
+
+    <script src="./../javascript/cart.js"></script>
+    <script src="./../javascript/nav.js"></script>
+  </body>
+</html>
