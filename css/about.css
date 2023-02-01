@@ -1,55 +1,61 @@
-#about{
+#about {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.hBar{
+
+.hBar {
     height: 7px;
     width: 25%;
-    background: linear-gradient(90deg, rgba(231,20,92,1) 0%, rgba(172,132,254,1) 100%);
+    background: linear-gradient(90deg, rgba(231, 20, 92, 1) 0%, rgba(172, 132, 254, 1) 100%);
     margin-top: 20px;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
 }
-.barTitle{
+
+.barTitle {
     text-transform: uppercase;
     font-size: 28px;
     letter-spacing: 0.3em;
     margin-top: 45px;
     text-align: center;
-    background: linear-gradient(90deg, rgba(172,132,254,1) 0%, rgba(231,20,92,1) 100%);
+    background: linear-gradient(90deg, rgba(172, 132, 254, 1) 0%, rgba(231, 20, 92, 1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
-.profileContainer{
+
+.profileContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     /* background: red; */
     margin-bottom: 40px;
 }
-.imageBox{
+
+.imageBox {
     height: 570px;
     width: 430px;
     /* width: 100%; */
     /* border: 1px solid red; */
-    box-shadow: 0px 0px 0px 6px #747d8c,0px 0px 0px 12px #dfe4ea;
+    box-shadow: 0px 0px 0px 6px #747d8c, 0px 0px 0px 12px #dfe4ea;
     border-radius: 10px;
     position: relative;
     background: none;
 }
-.imageBox img{
+
+.imageBox img {
     height: 100%;
     width: 100%;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 10px;
 }
-.textBox{
+
+.textBox {
     height: 430px;
     width: 350px;
-    background: linear-gradient(90deg, rgba(254,132,198,1) 0%, rgba(207,19,50,0.9332983193277311) 100%);
+    background: linear-gradient(90deg, rgba(254, 132, 198, 1) 0%, rgba(207, 19, 50, 0.9332983193277311) 100%);
     position: absolute;
 
     padding: 10px;
@@ -59,27 +65,32 @@
     align-items: flex-start;
     justify-content: space-around;
 }
-.left{
+
+.left {
     left: 18%;
 }
-.right{
+
+.right {
     right: 18%;
 }
-.textBox h1{
+
+.textBox h1 {
     background: none;
     width: 100%;
     text-align: center;
     font-size: 28px;
     letter-spacing: 0.2rem;
 }
-.textBox h3{
+
+.textBox h3 {
     background: none;
     width: 100%;
     text-align: center;
     font-size: 22px;
     letter-spacing: 0.2rem;
 }
-.textBox p{
+
+.textBox p {
     background: none;
     width: 100%;
     text-align: center;
@@ -87,8 +98,29 @@
     letter-spacing: 0.2rem;
 }
 
+.profileButton {
+    background: #fd79a8;
+    width: max-content;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 0px auto;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.profileButton a {
+    background: none;
+    text-decoration: none;
+}
+
+.profileButton:hover {
+    background: #e84393;
+}
+
 /* about profiles */
-.aboutProfiles{
+.aboutProfiles {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,24 +128,28 @@
     margin-bottom: 40px;
 
 }
-.profileBox{
+
+.profileBox {
     height: 170px;
     width: 170px;
     margin: 30px;
     border-radius: 100%;
     position: relative;
 }
-.profileBox img{
+
+.profileBox img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 100%;
     cursor: pointer;
 }
-.active{
+
+.active {
     box-shadow: 0px 0px 0px 3px #222, 0px 0px 0px 8px #747d8c;
 }
-.profileBox::after{
+
+.profileBox::after {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     content: '';
@@ -126,14 +162,15 @@
     z-index: 1;
     opacity: 0;
 }
-.profileBox:hover::after{
+
+.profileBox:hover::after {
     opacity: 1;
     cursor: pointer;
 }
 
 /* form */
-.formContainer{
-    background:#282C35 ;
+.formContainer {
+    background: #282C35;
 
     display: flex;
     flex-direction: column;
@@ -143,20 +180,24 @@
     padding: 20px;
     height: max-content;
 }
-.formContainer h1{
+
+.formContainer h1 {
     background: none;
     margin: 10px;
     text-transform: capitalize;
 }
-form{
+
+form {
     background: none;
     flex: 0.5;
 }
-form label{
+
+form label {
     font-size: 24px;
     background: none;
 }
-form input{
+
+form input {
     font-size: 22px;
     width: 100%;
     background: #4b4b4b;
@@ -165,49 +206,58 @@ form input{
     padding: 10px;
     border-radius: 10px;
 }
-form textarea{
+
+form textarea {
     width: 100%;
     margin: 20px auto;
     background: #4b4b4b;
 }
-::placeholder{
+
+::placeholder {
     color: #a4b0be;
     padding: 10px;
 }
-.inlineDiv{
+
+.inlineDiv {
     background: none;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.inlineDiv > input{
+
+.inlineDiv>input {
     background: none;
     flex: 0.3;
 }
-.inlineDiv label{
+
+.inlineDiv label {
     margin-left: 10px;
     width: 100%;
 }
-.submitButton{
+
+.submitButton {
     cursor: pointer;
     background: #ff6b81;
     transition: all 0.5s;
 }
-.submitButton:hover{
+
+.submitButton:hover {
     background: #ff4757;
 }
 
 /* popup message */
-.messageContainer{
+.messageContainer {
     background: #747d8c;
     margin: 20px auto;
     padding: 20px;
     transition: all 0.5s;
 }
-.hide{
+
+.hide {
     visibility: hidden;
 }
-.messageContainer p{
+
+.messageContainer p {
     background: none;
     text-align: center;
 }
