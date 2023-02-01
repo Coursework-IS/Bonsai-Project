@@ -4,11 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Subham Adhikari" />
+    <meta
+      name="description"
+      content="This is the cart page that shows the items added to the cart"
+    />
+    <meta name="application-name" content="BonziVerse" />
+
     <title>Cart</title>
+
     <link rel="stylesheet" type="text/css" href="./../css/nav.css" />
     <link rel="stylesheet" type="text/css" href="./../css/footer.css" />
     <link rel="stylesheet" type="text/css" href="./../css/cart.css" />
     <link rel="stylesheet" type="text/css" href="./../css/card.css" />
+
+    <style>
+      .popup {
+        background: #fff6;
+        padding: 20px;
+        height: 120px;
+        width: 360px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hidePopUp {
+        display: none;
+      }
+      .fixedDisplay {
+        position: fixed;
+        top: 50%;
+        right: 50%;
+        transform: translateY(-50%);
+        transform: translateX(50%);
+      }
+      .popup p {
+        background: none;
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <!-- Using a nav tag to create a menu-->
@@ -55,6 +89,11 @@
     <!-- Cart section -->
     <section id="cart" class="pageSpacing"></section>
 
+    <!-- popup message -->
+    <div id="popup" class="popup fixedDisplay hidePopUp">
+      <p>Product purchase successful!</p>
+    </div>
+
     <!-- Footer -->
     <div class="footerContainer">
       <div class="footerTop">
@@ -72,25 +111,68 @@
 
       <div class="footerMiddle">
         <div class="footerLinks">
-          <p style="font-size: 32px; font-weight: 600">Site Links</p>
-          <ul class="linksList">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./product.html">Products</a></li>
-            <li><a href="./reference.html">References</a></li>
-          </ul>
+          <div class="links" style="flex: 0.3">
+            <p style="font-size: 32px; font-weight: 600">Site Links</p>
+            <ul class="linksList">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./product.html">Products</a></li>
+              <li><a href="./reference.html">References</a></li>
+            </ul>
+          </div>
+          <div class="links" style="flex: 0.5">
+            <p
+              style="
+                font-size: 32px;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 20px;
+              "
+            >
+              Follow us on
+            </p>
+            <ul class="linksList iconList">
+              <li>
+                <a href="./index.html"
+                  ><img src="./../assets/icons/facebook.png"
+                /></a>
+              </li>
+              <li>
+                <a href="./about.html"
+                  ><img src="./../assets/icons/instagram.png"
+                /></a>
+              </li>
+              <li>
+                <a href="./blog.html"
+                  ><img src="./../assets/icons/twitter.png"
+                /></a>
+              </li>
+              <li>
+                <a href="./product.html"
+                  ><img src="./../assets//icons/reddit.png"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footerNewsletter">
           <div class="letterBox">
             <p style="font-size: 24px; background: none; font-weight: 500">
               Subscribe to our news letter
             </p>
-            <input type="email" placeholder="Enter email" class="inputBox" />
+            <input
+              type="email"
+              id="email"
+              onchange=""
+              placeholder="Enter email"
+              class="inputBox"
+            />
             <button
               type="submit"
               class="button"
               style="background: #487eb0; width: 20%; border-radius: 10px"
+              onclick="submitEmail()"
             >
               Sign Up
             </button>
