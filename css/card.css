@@ -1,3 +1,4 @@
+/* product card is a table  and styling of the table is done*/
 table,tr,td{
     background-color:#2F3542 ;
     /* removes the border */
@@ -6,9 +7,11 @@ table,tr,td{
     transition: all 0.5s ease-in-out;
     
 }
+/* setting margins for the card items */
 table{
     margin: 20px;
 }
+/* styling the image that is displayed on the card */
 .productImage{
     width: 360px;
     height: 229.79px;
@@ -16,6 +19,8 @@ table{
     border-radius: 10px;
     background: none;
 }
+/*  */
+/* styling the text of product card */
 .productTitle{
     margin-top: 15px;
     background: none;
@@ -31,9 +36,11 @@ table{
     margin-left: 6px;
     margin-top: 10px;
 }
+/* setting the width for the buttons */
 .buttonsContainer>td{
     width: 50%;
 }
+/* styling the buttons */
 .buttonsContainer>td>div{
     margin-top: 20px;
     width: 50%;
@@ -42,6 +49,7 @@ table{
     cursor: pointer;
     
 }
+/* styling the div containing the price */
 .priceContainer{
     margin-left: auto;
     border-top-left-radius: 7px;
@@ -53,7 +61,8 @@ table{
     align-items:center;
     justify-content: center;
 }
-
+/*  */
+/* styling the price text */
 .priceContainer p{
     background:none;
     color: #000000;
@@ -64,7 +73,8 @@ table{
     background: none;
     color: #eb4d4b !important;
 }
-
+/*  */
+/* styling the add to cart button */
 .addToCart{
     margin-left: 0;
     margin-right: auto;
@@ -77,12 +87,14 @@ table{
     background: #eb4d4b;
 }
 
+/* increasing the size of the table when hovered */
 table:hover{
     z-index: 999px;
     cursor: pointer;
     transform: scale(1.1);
 }
 
+/* styling the remove from cart button */
 .removeText{
     color: red !important;
     font-weight: 600;

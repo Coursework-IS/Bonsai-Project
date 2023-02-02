@@ -1,7 +1,7 @@
 // these are the product data which are stored in the form of array of objects.
 const data = [{title:'Azalea',description:'Here is the description',image:'azalea.jpg',price:'125',originalPrice:'200'},
-                {title:'Chinese Elm',description:'Here is the description',image:'chinese-elm.jpg',price:'325',originalPrice:'200'},
-                {title:'Dwarf Boxwood',description:'Here is the description',image:'dwarf-boxwood.jpg',price:'205',originalPrice:'200'},
+                {title:'Chinese Elm',description:'Here is the description',image:'chinese-elm.jpg',price:'200',originalPrice:'325'},
+                {title:'Dwarf Boxwood',description:'Here is the description',image:'dwarf-boxwood.jpg',price:'200',originalPrice:'205'},
                 {title:'Fir',description:'Here is the description',image:'fir.jpg',price:'125',originalPrice:'400'},
                 {title:'Japanese Maple',description:'Here is the description',image:'japanese-maple.jpg',price:'100',originalPrice:'200'},
                 {title:'Juniper',description:'Here is the descriptioa',image:'juniper.jpg',price:'95',originalPrice:'200'},

@@ -34,6 +34,7 @@ html{
 
     
 }
+/* background for the navbar */
 .navBackground{
     background: #1B1B1B !important;
 }
@@ -41,6 +42,7 @@ html{
 a{
     text-decoration: none;
 }
+/* styling the div that contains the logo */
 .navLogo{
     flex: 0.5;
     display: flex;
@@ -49,10 +51,13 @@ a{
     justify-content: flex-start;
     background: none;
 }
+/* setting 50% width for the menus */
 .navMenu{
     flex: 0.5;
     background: none;
 }
+/*  */
+/* styling the menus */
 .navMenu  ul{
     list-style: none;
     display: flex;
@@ -66,6 +71,7 @@ ul li{
     margin-right: auto;
     background: none;
 }
+/* styling the link from default type */
 ul > li > a{
     color: #A92367;
     cursor: pointer;
@@ -73,10 +79,13 @@ ul > li > a{
     background: none;
     transition: all 0.7s;
 }
+/* setting hover effect for the menu */
 ul > li > a:hover{
-    color: #fc5c65;
+    color: #fbc531;
 }
+/*  */
 
+/* styling the buttons  */
 .button{
     border: none;
     background: none;
@@ -85,6 +94,7 @@ ul > li > a:hover{
     padding: 14px;
     cursor: pointer;
 }
+/* setting hover effect for the button */
 .button:hover{
     background: #B33771;
     opacity: 0.6;
@@ -96,6 +106,8 @@ ul > li > a:hover{
     display: none;
     transition: all ease-in-out 0.5s;
 }
+
+/* styling the arrow that sends to the top of the page which set as fixed */
 .arrowTop{
     text-align: center;
 

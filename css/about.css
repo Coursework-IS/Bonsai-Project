@@ -1,9 +1,11 @@
+/* stacking all the elemnets in column */
 #about {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* horizontal bar for displaying below the text */
 .hBar {
     height: 7px;
     width: 25%;
@@ -13,7 +15,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-
+/* colorful title with linear gradient */
 .barTitle {
     text-transform: uppercase;
     font-size: 28px;
@@ -25,26 +27,80 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+/* managing the display style of profile picture of each member */
+.aboutProfiles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 
+}
+
+/* setting dimension of the div that holds profile picture */
+.profileBox {
+    height: 170px;
+    width: 170px;
+    margin: 30px;
+    border-radius: 100%;
+    position: relative;
+}
+
+/* setting the proper dimensions for the profile image */
+.profileBox img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/* style for the clicked profile */
+.active {
+    box-shadow: 0px 0px 0px 3px #222, 0px 0px 0px 8px #747d8c;
+}
+
+/* introducing pseudo after element profile box that holds background color to show when hovered. */
+.profileBox::after {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+}
+
+/* setting opacity of pseudo after element to show hover effect */
+.profileBox:hover::after {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/* contains details of each profile */
 .profileContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* background: red; */
     margin-bottom: 40px;
 }
 
+/* holds the image of each profile with set dimensions */
 .imageBox {
     height: 570px;
     width: 430px;
-    /* width: 100%; */
-    /* border: 1px solid red; */
     box-shadow: 0px 0px 0px 6px #747d8c, 0px 0px 0px 12px #dfe4ea;
     border-radius: 10px;
     position: relative;
     background: none;
 }
 
+/* stying the image so that it is fitting properly in imageBox */
 .imageBox img {
     height: 100%;
     width: 100%;
@@ -52,6 +108,7 @@
     border-radius: 10px;
 }
 
+/* styling the box that holds details of each profile */
 .textBox {
     height: 430px;
     width: 350px;
@@ -66,14 +123,13 @@
     justify-content: space-around;
 }
 
+/* giving margin from the left side */
 .left {
-    left: 18%;
+    left: 19%;
 }
 
-.right {
-    right: 18%;
-}
-
+/*  */
+/* styling the text */
 .textBox h1 {
     background: none;
     width: 100%;
@@ -97,7 +153,10 @@
     font-size: 24px;
     letter-spacing: 0.2rem;
 }
+/*  */
 
+/*  */
+/* styling the button that holds link to each profile */
 .profileButton {
     background: #fd79a8;
     width: max-content;
@@ -118,55 +177,8 @@
 .profileButton:hover {
     background: #e84393;
 }
+/*  */
 
-/* about profiles */
-.aboutProfiles {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-
-}
-
-.profileBox {
-    height: 170px;
-    width: 170px;
-    margin: 30px;
-    border-radius: 100%;
-    position: relative;
-}
-
-.profileBox img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 100%;
-    cursor: pointer;
-}
-
-.active {
-    box-shadow: 0px 0px 0px 3px #222, 0px 0px 0px 8px #747d8c;
-}
-
-.profileBox::after {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    z-index: 1;
-    opacity: 0;
-}
-
-.profileBox:hover::after {
-    opacity: 1;
-    cursor: pointer;
-}
 
 /* form */
 .formContainer {
@@ -180,7 +192,7 @@
     padding: 20px;
     height: max-content;
 }
-
+/* styling the form header */
 .formContainer h1 {
     background: none;
     margin: 10px;
@@ -191,12 +203,12 @@ form {
     background: none;
     flex: 0.5;
 }
-
+/* styling the form label */
 form label {
     font-size: 24px;
     background: none;
 }
-
+/* styling the input tag */
 form input {
     font-size: 22px;
     width: 100%;
@@ -206,7 +218,7 @@ form input {
     padding: 10px;
     border-radius: 10px;
 }
-
+/* changing the layouts of the textarea */
 form textarea {
     width: 100%;
     margin: 20px auto;
@@ -217,7 +229,7 @@ form textarea {
     color: #a4b0be;
     padding: 10px;
 }
-
+/* styling the div that contains radio button and checkbox */
 .inlineDiv {
     background: none;
     display: flex;
@@ -229,12 +241,13 @@ form textarea {
     background: none;
     flex: 0.3;
 }
-
+/* styling the label for radio buttons */
 .inlineDiv label {
     margin-left: 10px;
     width: 100%;
 }
-
+/*  */
+/* styling the submit button of the form */
 .submitButton {
     cursor: pointer;
     background: #ff6b81;
@@ -244,8 +257,9 @@ form textarea {
 .submitButton:hover {
     background: #ff4757;
 }
+/*  */
 
-/* popup message */
+/* popup message container is styled */
 .messageContainer {
     background: #747d8c;
     margin: 20px auto;

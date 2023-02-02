@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Subham Adhikari" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./../../css/portfolio/subham.css"
+    />
+    <title>Subham Adhikari</title>
+  </head>
+  <body>
+    <section>
+      <div class="landingAddOn"></div>
+      <div class="landingPage">
+        <div class="pageTop" id="pageTop">
+          <p>Subham Adhikari</p>
+        </div>
+        <div class="landingContainer">
+          <div class="landingText">
+            <p>Hello There! I am</p>
+            <p>
+              <span style="color: #747d8c">Subham</span>
+              <span style="color: #2f3542">Adhikari</span>
+            </p>
+            <button class="button"><a href="#skills">Know me More</a></button>
+          </div>
+          <div class="landingImage">
+            <img class="coverImage" src="./../../assets/profile/subham.JPG" />
+            <div class="socialLinks">
+              <ul>
+                <li>
+                  <a href="https://github.com/subhamadhikari"
+                    ><img src="./../../assets/icons/github.png"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/subhamadk710/"
+                    ><img src="./../../assets/icons/instagram.png"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/subhamadk710"
+                    ><img src="./../../assets/icons/twitter.png"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h1>Skills</h1>
+      <div class="bar"></div>
+      <div class="skillsContainer">
+        <div class="box">
+          <img src="./../../assets/icons/java.png" />
+        </div>
+        <div class="box">
+          <img src="./../../assets/icons/js.png" />
+        </div>
+        <div class="box"><img src="./../../assets/icons/html-5.png" /></div>
+        <div class="box"><img src="./../../assets/icons/css-3.png" /></div>
+        <div class="box"><img src="./../../assets/icons/atom.png" /></div>
+        <div class="box"><img src="./../../assets/icons/js.png" /></div>
+        <div class="box"><img src="./../../assets/icons/js.png" /></div>
+        <div class="box"><img src="./../../assets/icons/html-5.png" /></div>
+        <div class="box"><img src="./../../assets/icons/figma.png" /></div>
+      </div>
+    </section>
+    <section id="education">
+      <h1>Education</h1>
+      <div class="bar"></div>
+    </section>
+    <section id="footer"></section>
+
+    <script>
+      let name = document.querySelector(".pageTop");
+      document.addEventListener("scroll", () => {
+        if (window.scrollY > 580) {
+          name.classList.add("backgroundWhite");
+        } else {
+          name.classList.remove("backgroundWhite");
+        }
+      });
+    </script>
+  </body>
+</html>

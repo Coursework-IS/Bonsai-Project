@@ -1,3 +1,4 @@
+/* distributing screen for the article contents and share icons */
 #article{
     background: #282C35;
     display: flex;
@@ -13,13 +14,13 @@
     flex-direction: column;
     position: relative;
 }
+/*  */
+/* styling text */
 .articleTitle{
     background: none;
     font-size: 42px;
     margin: 10px 0px;
     font-weight: 600;
-    
-     /* color: #970439; */
     color: #f52b87;
 }
 .articleAuthor{
@@ -42,6 +43,9 @@
     margin-bottom: 25px;
     color: #f900a7;
 }
+/*  */
+
+/* setting icon container to be sticky at the bottom of div with id as about */
 .articleShare{
     background: none;
     flex: 0.35;
@@ -64,12 +68,14 @@
     color:#3498db;
     margin-bottom: 12px;
 }
+/* styling div that holds icons */
 .shareIcons{
     background: none;
     display: flex;
     width: 50%;
     justify-content: flex-end;
 }
+/* setting dimensions for the icons */
 .shareIcons img{
     background: none;
     height: 32px;
