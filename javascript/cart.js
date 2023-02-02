@@ -1,6 +1,7 @@
 var cartItem = []
 
 const cart = document.getElementById('cart');
+const popup = document.getElementById('popup');
 
 if(typeof(window) != undefined){
     var products = window.localStorage.getItem("cart")
@@ -28,7 +29,7 @@ if((cartItem == null) || cartItem.length == 0){
         <tr><td colspan="2"><p class="productTitle">${item.title}</p></td></tr>
         <tr><td colspan="2"><p class="productDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiut aliquip ex ea commodo consequat. Duis aute irure dt non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></td></tr>
         <tr class="buttonsContainer">
-            <td><div class="priceContainer"><p class="removeText">Remove</p></div></td>
+            <td><div class="priceContainer"><p class="removeText" onclick="removeCart('${index}')">Remove</p></div></td>
             <td><div class="addToCart" onclick="checkoutCart('${index}')">Checkout</div></td>
         </tr>
         </table>
@@ -37,6 +38,21 @@ if((cartItem == null) || cartItem.length == 0){
 }
 
 const checkoutCart = (index) => {
+    cartItem = cartItem.filter((item,filterIndex)=>{
+        return index!=filterIndex;
+    })
+    window.localStorage.setItem("cart",JSON.stringify(cartItem))
+    console.log("new:"+cartItem)
+    
+    popup.classList.remove('hidePopUp')
+    setTimeout(()=> {
+        popup.classList.add('hidePopUp')
+        window.location.reload()
+    },600)
+
+    
+}
+const removeCart = (index) => {
     cartItem = cartItem.filter((item,filterIndex)=>{
         return index!=filterIndex;
     })

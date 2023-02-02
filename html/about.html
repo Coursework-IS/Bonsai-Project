@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="author" content="Subham Adhikari">
+    <meta name="description" content="This page contains details about our team">
+    <meta name="application-name" content="BonziVerse">
+
     <title>About</title>
+    
     <link rel="stylesheet" type="text/css" href="./../css/nav.css" />
     <link rel="stylesheet" type="text/css" href="./../css/footer.css" />
     <link rel="stylesheet" type="text/css" href="./../css/about.css" />
@@ -196,11 +201,12 @@
             <p style="font-size: 24px; background: none; font-weight: 500">
               Subscribe to our news letter
             </p>
-            <input type="email" placeholder="Enter email" class="inputBox" />
+            <input type="email" id="email" onchange="" placeholder="Enter email" class="inputBox" />
             <button
               type="submit"
               class="button"
               style="background: #487eb0; width: 20%; border-radius: 10px"
+              onclick="submitEmail()"
             >
               Sign Up
             </button>
@@ -220,5 +226,6 @@
     <script src="./../javascript/nav.js"></script>
     <script src="./../javascript/about.js"></script>
     <script src="./../javascript/form.js"></script>
+    <script src="./../javascript/footer.js"></script>
   </body>
 </html>

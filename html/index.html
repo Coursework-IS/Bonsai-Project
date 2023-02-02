@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Prajwol Lamichhane,Anuja Gautam" />
+    <meta
+      name="description"
+      content="This is the homepage of our ecommerce site."
+    />
+    <meta name="application-name" content="BonziVerse" />
     <!-- Add meta tag -->
-    <link rel="stylesheet" type="text/css" href="./../css/nav.css"/>
+    <link rel="stylesheet" type="text/css" href="./../css/nav.css" />
     <title>Home</title>
     <style>
-        .landingContainer{
-            margin-top: 30px;
-            display: flex;
-            flex-direction: row;
-            height: 100vh;
+      .landingContainer {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+      }
+      .landingImage {
+        /* Dividing 50% of the screen for the image */
+        flex: 0.5;
+      }
+      .landingImageBackground {
+        border: none;
+        border-radius: 50%;
+        height: 450px;
+        width: 450px;
+        background-color: #ff6b81;
+        /* decresing the opacity of the image background */
+        opacity: 0.25;
 
         }
         .landingImage{
@@ -68,49 +87,94 @@
             margin: 40px 0;
         }
 
+
+      .pageDescriptionContainer {
+        margin: 0 40px;
+        padding: 20px;
+        background: #2f3542;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      .pageTitle {
+        background: none;
+        text-align: center;
+        margin-top: 10px 0;
+      }
+      .pageContent {
+        background: none;
+        text-align: left;
+        margin: 40px 0;
+      }
     </style>
-</head>
-<body>
-
-
+  </head>
+  <body>
     <!-- Using a nav tag to create a menu-->
-    <nav id="navigation" class="navContainer pageSpacing" style="background: none;">
+    <nav
+      id="navigation"
+      class="navContainer pageSpacing"
+      style="background: none"
+    >
+      <div class="navLogo">
+        <a href="./index.html" style="background: none"
+          ><img
+            src="./../assets/icons/logo.png"
+            height="58"
+            width="58"
+            style="cursor: pointer; background: none"
+        /></a>
+        <p
+          style="
+            font-weight: 400;
+            font-size: 24px;
+            margin-left: 4px;
+            color: #ff0484;
+            cursor: pointer;
+            background: none;
+          "
+        >
+          Bonzi-Verse
+        </p>
+      </div>
 
-        <div class="navLogo">
-            <a href="./index.html" style="background: none;"><img src="./../assets/icons/logo.png" height="58" width="58" style="cursor: pointer;background: none;"/></a>
-            <p style="font-weight: 400;font-size: 24px;margin-left: 4px;color: #FF0484;cursor: pointer;background: none;">Bonzi-Verse</p>
-        </div>
-
-        <div class="navMenu">
-            <!-- Using list elements for displaying menu -->
-            <ul class="menuItem">
-                <li><a href="#" style="color: white;">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#references">References</a></li>
-            </ul>
-        </div>
+      <div class="navMenu">
+        <!-- Using list elements for displaying menu -->
+        <ul class="menuItem">
+          <li><a href="#" style="color: white">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#references">References</a></li>
+        </ul>
+      </div>
     </nav>
 
     <!-- This is section which holds images for the landing page. -->
     <section class="pageSpacing">
-        <div class="landingContainer">
-            <div class="landingImage">
-                <div class="landingImageBackground">
-                </div>
-                    <img class="coverImage" height="350" width="350" src="./../assets/icons/coverImg.png"/>
-            </div>
-            <div class="landingText">
-                <h1 style="font-size: 36px;">Welcome to our bonsi marketplace</h1>
-                <p style="font-size: 42px;margin-top: 20px;">A <span class="highlight">Bonsi</span> hub</p>
-                <button class="button" style="margin-top: 35px;" type="button">View More</button>
-            </div>
+      <div class="landingContainer">
+        <div class="landingImage">
+          <div class="landingImageBackground"></div>
+          <img
+            class="coverImage"
+            height="350"
+            width="350"
+            src="./../assets/icons/coverImg.png"
+          />
         </div>
+        <div class="landingText">
+          <h1 style="font-size: 36px">Welcome to our bonsi marketplace</h1>
+          <p style="font-size: 42px; margin-top: 20px">
+            A <span class="highlight">Bonsi</span> hub
+          </p>
+          <button class="button" style="margin-top: 35px" type="button">
+            View More
+          </button>
+        </div>
+      </div>
     </section>
 
     <!-- This section holds the brief description of each pages -->
     <section class="pageSpacing">
+
         <div id="about" class="pageDescriptionContainer">
             <h1 class="pageTitle">About</h1>
             <p class="pageContent">
@@ -139,7 +203,8 @@
             </p>
             <button class="button" type="button"><a href="./reference.html" style="text-decoration: none;background: none;">View More</a></button>
         </div>
+
     </section>
     <script src="./../javascript/nav.js"></script>
-</body>
+  </body>
 </html>
