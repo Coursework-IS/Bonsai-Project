@@ -1,5 +1,5 @@
 const profiles = [
-  { name: "Aayush Acharya", title: "Don't watch the clock; do what it does. Keep going.", decsciprion: "Being involved in this team has provided me with opportunities that Icould only imagine.", image: "aayush.jpg", profile: "aayush.html" },
+  { name: "Aayush Acharya", title: "Don't watch the clock; do what it does. Keep going.", decsciprion: "Being involved in this team has provided me with opportunities that Icould only imagine.", image: "aayush.png", profile: "aayush.html" },
   { name: "Anuja Gautam", title: "Believe you can and you're halfway there.", decsciprion: "I have learnt with my team and led them with my skills, which has put me in a better place.", image: "anuja.jpg", profile: "anuja.html" },
   { name: "Hishila Chalaune", title: "The future belongs to those who believe in the beauty of their dreams.", decsciprion: "Working with this team has given me the skills necessary to strive and go ahead in life", image: "hishila.jpg", profile: "hishila.html" },
   { name: "Prajwol Lamichhane", title: "Don't let yesterday take up too much of today.", decsciprion: "Team is about working together and having fun and that is how we do.", image: "prajwol.jpg", profile: "prajwol.html" },
