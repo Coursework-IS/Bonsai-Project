@@ -41,7 +41,7 @@
     background: none;
     font-size: 20px;
     margin-bottom: 25px;
-    color: #f900a7;
+    color: #ecf0f1;
 }
 /*  */
 
@@ -76,7 +76,12 @@
     justify-content: flex-end;
 }
 /* setting dimensions for the icons */
-.shareIcons img{
+.shareIcons a{
+    background: none;
+    margin-left: auto;
+    cursor: pointer;
+}
+.shareIcons > a > img{
     background: none;
     height: 32px;
     width: 32px;

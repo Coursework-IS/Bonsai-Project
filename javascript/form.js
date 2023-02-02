@@ -1,6 +1,7 @@
 let popup = document.getElementById('popUpMessage');
 
 const formValidate = (event) => {
+    // prevents reloading of the page when form is submitted
     event.preventDefault();
     let name = document.forms['feedbackForm']['name'];
     let email = document.forms['feedbackForm']['email'];
@@ -10,12 +11,14 @@ const formValidate = (event) => {
         alert('None of the fields can be left empty')
         return
     }
+    // if checkbox is checked then it return true otherwise false
     if(checkbox.checked){
         popup.classList.remove('hide')
         name.value = "";
         email.value = "";
         message.value = "";
         
+        // popup mssage is removed after 5 seconds
         setTimeout(()=>{
             popup.classList.add('hide')
         },5000)
