@@ -29,12 +29,15 @@ hr{
 }
 /*  */
 /* styling the text */
-.iconBox > p{
+.iconBox > a >p,.iconBox p{
     font-size: 24px;
     margin-left: 10px;
     transition: all 0.5s;
 }
 .iconBox:hover > p{
+    color: #7f8fa6;
+}
+.iconBox:hover > a p{
     color: #7f8fa6;
 }
 /*  */
@@ -65,6 +68,10 @@ hr{
 .links li img{
     height: 32px;
     width: 32px;
+    transition: all 0.5s;
+}
+.links li img:hover{
+    transform: translateY(-12px);
 }
 .linksList > li{
     list-style: none;
