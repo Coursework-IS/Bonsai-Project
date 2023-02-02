@@ -33,26 +33,60 @@
         /* decresing the opacity of the image background */
         opacity: 0.25;
 
-        /* making image background relative so that image can be placed above it. */
-        position: relative;
-      }
-      .coverImage {
-        /* placing image above the background */
-        position: absolute;
-        background: none;
+        }
+        .landingImage{
+            /* Dividing 50% of the screen for the image */
+            flex: 0.5;
+        }
+        .landingImageBackground{
+            border: none;
+            border-radius: 50%;
+            height: 450px;
+            width: 450px;
+            background-color: #FF6B81;
+            /* decreasing the opacity of the image background */
+            opacity: 0.25;
 
-        top: 25%;
-        left: 4%;
-        right: 0%;
-      }
-      .landingText {
-        flex: 0.5;
-      }
-      .highlight {
-        color: #fc427b;
-        font-size: 56px;
-        font-weight: 500;
-      }
+            /* making image background relative so that image can be placed above it. */
+            position: relative;
+        }
+        .coverImage{
+            /* placing image above the background */
+            position: absolute;
+            background: none;
+
+            top: 30%;
+            left: 5%;
+            right: 0%;
+        }
+        .landingText{
+            flex: 0.5;;
+        }
+        .highlight{
+            color: #FC427B;
+            font-size: 56px;
+            font-weight: 500;
+        }
+
+        .pageDescriptionContainer{
+            border-radius: 15px 50px 30px;
+            margin: 0 40px;
+            padding: 20px;
+            background: #2F3542;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .pageTitle{
+            background: none;
+            text-align: center;
+            margin-top: 10px 0;
+        }
+        .pageContent{
+            background: none;
+            text-align: left;
+            margin: 40px 0;
+        }
+
 
       .pageDescriptionContainer {
         margin: 0 40px;
@@ -140,94 +174,36 @@
 
     <!-- This section holds the brief description of each pages -->
     <section class="pageSpacing">
-      <div id="about" class="pageDescriptionContainer">
-        <h1 class="pageTitle">About</h1>
-        <p class="pageContent">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-          voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-          accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
-          molestias architecto voluptate aliquam nihil, eveniet aliquid culpa
-          officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
-          nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque
-          error repudiandae fuga? Ipsa laudantium molestias eos sapiente
-          officiis modi at sunt excepturi expedita sint? Sed quibusdam
-          recusandae alias error harum maxime adipisci amet laborum
-        </p>
-        <button class="button" type="button">
-          <a href="./about.html" style="text-decoration: none; background: none"
-            >View More</a
-          >
-        </button>
-      </div>
-      <div id="blog" class="pageDescriptionContainer">
-        <h1 class="pageTitle">Blog</h1>
-        <p class="pageContent">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-          voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-          accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
-          molestias architecto voluptate aliquam nihil, eveniet aliquid culpa
-          officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
-          nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque
-          error repudiandae fuga? Ipsa laudantium molestias eos sapiente
-          officiis modi at sunt excepturi expedita sint? Sed quibusdam
-          recusandae alias error harum maxime adipisci amet laborum
-        </p>
-        <button class="button" type="button">
-          <a href="./blog.html" style="text-decoration: none; background: none"
-            >View More</a
-          >
-        </button>
-      </div>
-      <div id="products" class="pageDescriptionContainer">
-        <h1 class="pageTitle">Products</h1>
-        <p class="pageContent">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-          voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-          accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
-          molestias architecto voluptate aliquam nihil, eveniet aliquid culpa
-          officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
-          nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque
-          error repudiandae fuga? Ipsa laudantium molestias eos sapiente
-          officiis modi at sunt excepturi expedita sint? Sed quibusdam
-          recusandae alias error harum maxime adipisci amet laborum
-        </p>
-        <button class="button" type="button">
-          <a
-            href="./product.html"
-            style="text-decoration: none; background: none"
-            >View More</a
-          >
-        </button>
-      </div>
-      <div id="references" class="pageDescriptionContainer">
-        <h1 class="pageTitle">References</h1>
-        <p class="pageContent">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-          voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-          accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
-          molestias architecto voluptate aliquam nihil, eveniet aliquid culpa
-          officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
-          nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque
-          error repudiandae fuga? Ipsa laudantium molestias eos sapiente
-          officiis modi at sunt excepturi expedita sint? Sed quibusdam
-          recusandae alias error harum maxime adipisci amet laborum
-        </p>
-        <button class="button" type="button">
-          <a
-            href="./reference.html"
-            style="text-decoration: none; background: none"
-            >View More</a
-          >
-        </button>
-      </div>
+
+        <div id="about" class="pageDescriptionContainer">
+            <h1 class="pageTitle">About</h1>
+            <p class="pageContent">
+                At Bonzi-Verse, we are proud to introduce our dynamic and driven team of web designers who are dedicated to providing an exceptional online shopping experience for our customers. With a blend of technical skills, creativity, and a passion for design, each member of our team brings their unique perspective and talent to create visually stunning and user-friendly websites that are easy to navigate and provide a seamless shopping experience. From conceptualization to launch, our web design team works tirelessly to deliver innovative and impactful solutions that meet the needs of our customers and exceed their expectations.
+            </p>
+            <button class="button" type="button"><a href="./about.html" style="text-decoration: none;background: none;">View More</a></button>
+        </div>
+        <div id="blog" class="pageDescriptionContainer">
+            <h1 class="pageTitle">Blog</h1>
+            <p class="pageContent">
+                Explore the world of bonsai like never before through our innovative Bonzi-Verse platform, offering a unique blend of AI technology and passion for nature. Our blog is a hub of information and inspiration, featuring expert advice, in-depth guides, and the latest trends in bonsai care and cultivation. Stay up-to-date on the exciting advancements at the intersection of technology and horticulture, and be a part of the conversation as we delve into the world of bonsai plants and all things related.
+            </p>
+            <button class="button" type="button"><a href="./blog.html" style="text-decoration: none;background: none;">View More</a></button>
+        </div>
+        <div id="products" class="pageDescriptionContainer">
+            <h1 class="pageTitle">Products</h1>
+            <p class="pageContent">
+                Enhance your indoor or outdoor living space with our stunning collection of bonsai trees. Each one is carefully cultivated and trimmed to perfection, showcasing their natural beauty and grace. With affordable price range, you'll find a bonsai that fits both your aesthetic and budget. Browse through our range, from traditional Juniper and Maple bonsai to exotic Ficus and Japanese Maple, and add your favorite to your cart with just a click. Whether you're a seasoned bonsai enthusiast or just starting out, our bonsai plants will bring a touch of nature to your home and create your own personal oasis of peace and serenity.
+            </p>
+            <button class="button" type="button"><a href="./product.html" style="text-decoration: none;background: none;">View More</a></button>
+        </div>
+        <div id="references" class="pageDescriptionContainer">
+            <h1 class="pageTitle">References</h1>
+            <p class="pageContent">
+                Our team acknowledges the talented creators and owners of the logos and designs that have inspired Bonzi-Verse. We extend our heartfelt gratitude for their contributions and hope to continue to spread the beauty of their work.
+            </p>
+            <button class="button" type="button"><a href="./reference.html" style="text-decoration: none;background: none;">View More</a></button>
+        </div>
+
     </section>
     <script src="./../javascript/nav.js"></script>
   </body>
