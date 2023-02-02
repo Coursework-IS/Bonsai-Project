@@ -1,18 +1,17 @@
+// variavble to store cart items
 var cartItem = []
 
 const cart = document.getElementById('cart');
 const popup = document.getElementById('popup');
 
 if(typeof(window) != undefined){
+    // accessing the localstorage of the browser
     var products = window.localStorage.getItem("cart")
     cartItem = JSON.parse(products);
-    console.log("old"+cartItem)
 }
 
-console.log(cartItem)
-
+// html is rendered basesd on whether cart item is empty or not 
 if((cartItem == null) || cartItem.length == 0){
-    console.log("Empty Cart")
     cart.innerHTML = `
         <div class="emptyCartContainer">
             <div class="cartText">
@@ -37,6 +36,7 @@ if((cartItem == null) || cartItem.length == 0){
     }).join("")
 }
 
+// when checkout is clicked cart item is removed with displaying popup message
 const checkoutCart = (index) => {
     cartItem = cartItem.filter((item,filterIndex)=>{
         return index!=filterIndex;
@@ -52,6 +52,8 @@ const checkoutCart = (index) => {
 
     
 }
+
+// when remove is clicked cart item is removed
 const removeCart = (index) => {
     cartItem = cartItem.filter((item,filterIndex)=>{
         return index!=filterIndex;
