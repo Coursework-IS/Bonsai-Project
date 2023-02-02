@@ -13,14 +13,16 @@
 
     <title>Cart</title>
 
+    <!-- linking with external css -->
     <link rel="stylesheet" type="text/css" href="./../css/nav.css" />
     <link rel="stylesheet" type="text/css" href="./../css/footer.css" />
     <link rel="stylesheet" type="text/css" href="./../css/cart.css" />
     <link rel="stylesheet" type="text/css" href="./../css/card.css" />
 
+    <!-- internal css -->
     <style>
       .popup {
-        background: #fff6;
+        background: #2d3436;
         padding: 20px;
         height: 120px;
         width: 360px;
@@ -40,7 +42,7 @@
       }
       .popup p {
         background: none;
-        color: red;
+        color: #00b894;
       }
     </style>
   </head>
@@ -86,10 +88,10 @@
       </div>
     </nav>
 
-    <!-- Cart section -->
+    <!-- Cart section that holds items added to the cart -->
     <section id="cart" class="pageSpacing"></section>
 
-    <!-- popup message -->
+    <!-- popup for showing purchase message-->
     <div id="popup" class="popup fixedDisplay hidePopUp">
       <p>Product purchase successful!</p>
     </div>
@@ -192,5 +194,6 @@
 
     <script src="./../javascript/cart.js"></script>
     <script src="./../javascript/nav.js"></script>
+    <script src="./../javascript/footer.js"></script>
   </body>
 </html>

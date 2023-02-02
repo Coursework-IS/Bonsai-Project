@@ -13,6 +13,7 @@
     <meta name="application-name" content="BonziVerse" />
 
     <title>Products</title>
+
     <link rel="stylesheet" type="text/css" href="./../css/nav.css" />
     <link rel="stylesheet" type="text/css" href="./../css/card.css" />
     <link rel="stylesheet" type="text/css" href="./../css/footer.css" />
@@ -116,7 +117,7 @@
       />
     </div>
 
-    <!-- Pop Up  -->
+    <!-- Pop Up message for showing add to cart message  -->
     <div id="popup" class="cartPopUp hidden">
       <h1 style="background: none">Added to the cart</h1>
       <h2 style="margin-top: 10px; background: none" class="popUpTitle">
@@ -260,6 +261,7 @@
     <!-- Using external script -->
     <script src="./../javascript/products.js"></script>
     <script src="./../javascript/nav.js"></script>
+    <script src="./../javascript/footer.js"></script>
 
     <!-- Internal script  -->
     <script>
@@ -280,7 +282,6 @@
       // removing sticker.
       function closeSticker() {
         sticker.style.display = "none";
-        alert("Cancel!");
       }
 
       function openPopUp(name, price) {

@@ -1,27 +1,34 @@
+/* background for the all elements inside the footer */
 .footerContainer  * {
     background: #212122;
 }
+/* style for the horizontal line */
 hr{
     margin:30px 0px;
 }
+/* styling the layout for the footer */
 .footerContainer {
     background: #212122;
     display: flex;
     flex-direction: column;
     padding:20px 40px;
 }
+/* it is top section of footer */
 .footerTop{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
+/* styling the conatainer that holds icon and text */
 .iconBox{
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
+/*  */
+/* styling the text */
 .iconBox > p{
     font-size: 24px;
     margin-left: 10px;
@@ -31,25 +38,30 @@ hr{
     color: #7f8fa6;
 }
 /*  */
+/* it is the middle section of the footer */
 .footerMiddle{
     display: flex;
     flex-direction: row;
 }
+/*  */
+/* styling the links of the footer */
 .footerLinks{
     display: flex;
     flex-direction: row;
     flex: 0.5;
 }
-/*  */
 .links{
     display: flex;
     flex-direction: column;
 }
+/*  */
+/* setting the layout for the icon container */
 .iconList{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+/* setting the dimension for the icon */
 .links li img{
     height: 32px;
     width: 32px;
@@ -59,12 +71,15 @@ hr{
     font-size: 24px;
     margin: 10px 0px;
 }
+/* styling the link */
 .linksList > li > a{
     color: #EB4D4B;
 }
+/* setting the layout for the newsletter box */
 .footerNewsletter{
     flex: 0.5;
 }
+/* desingning the letter box  that constains input and button*/
 .letterBox{
     padding: 20px;
     display: flex;
@@ -76,9 +91,11 @@ hr{
     width: 100%;
     border-radius: 20px;
 }
+/* setting color for the place holder */
 ::placeholder{
     color:#FFFFFF ;
 }
+/* styling the input box */
 .inputBox{
     background: #54626F;
     padding: 10px;
