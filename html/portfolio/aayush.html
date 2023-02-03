@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- Boilerplate -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush</title>
+    <link rel="stylesheet" type="text/css" href="Bonsai-Project\css\nav.css"/>
+</head>
+
+<!-- The internal css for the portfolio page -->
+<style>
+
+    /* The features of body is set with bgcolor, font color and font family */
+    body
+{
+    background-color: rgb(46, 42, 42);
+    color:#fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+    .folio-menu
+{
+    margin-left:2%;
+    width: max-content;
+    background-color: rgb(34, 33, 33);
+    color:#fff;
+    font-weight:500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+    .folio-profile img
+{
+    border:2.5px solid rgb(117, 102, 15);
+    border-radius:10%;
+    margin-left: 5%;
+}
+
+
+    .container
+{
+    margin-left:20%;
+    position: absolute;
+    top:2%;
+}
+
+    .skill-container
+{
+    display: flex;
+    
+}
+
+    .skill-item
+
+{
+    width:270px;
+    margin-left: 10%;
+    border-radius: 10%;
+    box-shadow: 2px 4px 1px 4px rgb(196, 193, 182);
+}
+
+    .skill-item h1
+{
+    margin-left:10%;
+}
+
+/* The project and skills section use the same classes internally */
+    .project-container
+{
+    margin-top: 10%;;
+}
+</style>
+<body>
+
+    <!-- The leftmost section defining the portfolio in summary -->
+    <div class="folio-menu" id="folio-menu">
+        <div class="folio-profile">
+            <img src="./../../assets/profile/aayush.png" width="200vw">
+        </div>
+        <div class="name">
+           <h1>Aayush Acharya</h1> 
+        </div>
+        <div class="contact">
+            <h4>Contact: 9874190501</h4>
+            <h4>Address:Lalitpur-4,Nepal</h4>
+            <h4>Email:aayush@tackoom.xyz</h4>
+        </div>
+        <div class="aboutme">
+            <h4>About Me</h4>
+            <p>
+            I am a motivated individual<br> who has worked in web  <br>development. I focus on learning <br>and growing. I like to work with <br>team and keep learning<br>with each other while<br>collaborating.
+            </p>
+        </div>
+    </div>
+    <div class="container">
+
+        <!-- Skills Section  -->
+        <div class="skills">
+            <h1>Skills</h1>
+            <div class="skill-container">
+                <div class="skill-item">
+                    <h1>React</h1>
+                    <img src="./../../assets/profileAssets/React-icon.svg.png" width="200vw">
+                </div>
+                <div class="skill-item">
+                    <h1>MongoDB</h1>
+                    <img src="./../../assets/profileAssets/MongoDB-sm-logo-500x400-1-1.gif" width="200vw">
+                </div>
+                <div class="skill-item">
+                    <h1>Solidity</h1>
+                    <img src="./../../assets/profileAssets/1200px-Solidity_logo.svg.png" width="100vw">
+                </div>
+        </div>
+    </div>
+    <div class="project-container">
+
+        <!-- Projects Section  -->
+        <div class="skills">
+            <h1>Projects</h1>
+            <div class="skill-container">
+                <div class="skill-item" style="border-radius: 1%;">
+                    <h1>SpaceApps Hackathon</h1>
+                    <img src="./../../assets/profileAssets/spaceapps.png" width="250vw">
+                </div>
+                <div class="skill-item" style="border-radius:1%">
+                    <h1>Stepn DApp</h1>
+                    <img src="./../../assets/profileAssets/stepn.jpg" width="200vw">
+                </div>
+                <div class="skill-item" style="border-radius:1%">
+                    <h1>TedXMaitighar Website</h1>
+                    <img src="./../../assets/profileAssets/tedx.png" width="250vw">
+                </div>
+        </div>
+    </div>
+</body>
+</html>

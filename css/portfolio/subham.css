@@ -232,3 +232,24 @@ button a{
 li{
     margin: 25px 0px;
 }
+
+.copyright{
+    display: flex;
+    flex-direction: row;
+    color: wheat;
+    align-items: flex-end;
+    justify-content: center;
+    border-top: 2px solid white;
+    /* background: blue; */
+    height: 80px;
+}
+.fname{
+    text-transform: uppercase;
+    color: #778ca3;
+    margin:0px 20px;
+}
+.lname{
+    color: #a55eea;
+    text-transform: uppercase;
+    margin: 0px 20px;
+}
