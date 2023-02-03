@@ -44,6 +44,8 @@ a{
     margin-bottom: 10px;
     /* color: #353b48; */
     color: white;
+    width: 50%;
+    background: none;
 }
 .coverDetails h3{
     font-size: 20px;

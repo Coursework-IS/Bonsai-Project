@@ -1,3 +1,4 @@
+/* style for table name */
 .pageTitle {
     margin-top: 40px;
     text-align: center;
@@ -8,7 +9,7 @@
     color: bisque;
     margin-bottom: 25px;
 }
-
+/* setting width for the table */
 table {
     width: 80%;
     background: #fff5;
@@ -28,11 +29,10 @@ th {
 
 td {
     background: #fff5;
-    /* backdrop-filter: blur(7px); */
     padding: 20px;
     text-align: left;
 }
-
+/* styling icon dimensions */
 td img {
     background: none;
     height: 32px;
@@ -44,6 +44,7 @@ td a {
     background: none;
 }
 
+/* changing table row color on hover */
 tbody tr:hover {
     background: #fffb;
     cursor: pointer;
@@ -70,7 +71,7 @@ tbody {
     height: 60vh;
     overflow-y: scroll;
 }
-
+/* settinh header width */
 .designIns thead th{
     width: 7%;
 }
@@ -82,10 +83,12 @@ tbody {
 .designIns td img{
     height: 350px;
     width: 450px;
+    object-fit: contain;
 }
 .photoCredits td img{
     height: 350px;
     width: 380px;
+    object-fit: cover;
 }
 .photoCredits thead th{
     width: 20;

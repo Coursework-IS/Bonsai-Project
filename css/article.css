@@ -80,6 +80,10 @@
     background: none;
     margin-left: auto;
     cursor: pointer;
+    transition: all 0.5s;
+}
+.shareIcons a:hover{
+    transform: translateY(-12px);
 }
 .shareIcons > a > img{
     background: none;
