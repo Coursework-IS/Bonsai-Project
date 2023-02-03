@@ -1,11 +1,13 @@
+/* div that is to be displayed when no item is in the cart */
 .emptyCartContainer{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 90vh;
 }
+
+/* styling the text that is displayed when no item is in the cart */
 .cartText{
-    
     font-size: 48px;
     display: flex;
     align-items: center;
@@ -20,12 +22,13 @@
     color: #95a5a6;
     background: none;
 }
+
 .cartText img{
     height: 100px;
     width: 100px;
 }
 
-/*  */
+/*  setting the display layout for the items in cart*/
 #cart{
     display: flex;
     flex-direction: row;

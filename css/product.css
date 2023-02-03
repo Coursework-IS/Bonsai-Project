@@ -1,7 +1,6 @@
+/* styling the div that contains cart icon */
 .showCart{
     display: flex;
-
-    /* background-color: red; */
     border-radius: 40px;
 
     align-items: center;
@@ -25,13 +24,14 @@
     cursor: pointer;
     transition: all 0.8s;
 }
+/* setting the dimensions for the cart icon */
 .cartLogo img{
     height: 36px;
     width: 36px;
     background: none;
 }
 
-
+/* setting hover effect for the cart icon */
 .showCart:hover{
     background: #eb3b5a;
 }

@@ -71,18 +71,31 @@ tbody {
     overflow-y: scroll;
 }
 
-.designIns thead th,
-.photoCredits thead th {
+.designIns thead th{
     width: 7%;
 }
 
-.designIns tbody td,
-.photoCredits tbody td {
+.designIns tbody td{
     width: 7%;
 }
 
-.designIns td img,
-.photoCredits td img {
+.designIns td img{
     height: 350px;
     width: 450px;
+}
+.photoCredits td img{
+    height: 350px;
+    width: 380px;
+}
+.photoCredits thead th{
+    width: 20;
+    text-align: left;
+    padding: 10px;
+}
+.photoCredits tbody td{
+    width: 30
+}
+.photoCredits td {
+    text-align: left;
+    padding: 10px 0px;
 }

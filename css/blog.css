@@ -1,6 +1,9 @@
+/* settting spacing for the blog page that can be reused throughout the page */
 .blogSpacing{
     padding-left: 120px;
 }
+
+/* setting the background image  */
 .blogCover{
     position: relative;
     background-image: url("./../assets/blogImages/blogCover1.jpg");
@@ -10,8 +13,8 @@
     height: 85vh;
     padding-top: 70px;
 }
+/* styling the div that holds the details of fetured article */
 .coverDetails{
-    /* background: red; */
     background: none;
     display: flex;
     flex-direction: column;
@@ -21,6 +24,7 @@
     justify-content: flex-end;
     margin-top: 0px;
 }
+/* styling the link */
 a{
     background: none;
 }
@@ -39,7 +43,7 @@ a{
     font-size: 24px;
     margin-bottom: 10px;
     /* color: #353b48; */
-    color: black;
+    color: white;
 }
 .coverDetails h3{
     font-size: 20px;

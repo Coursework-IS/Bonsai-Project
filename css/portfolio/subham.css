@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: #4d4dff; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.backgroundWhite{
+    background: white;
+    z-index: 999px;
+}
+.pageTop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: black;
+}
+.landingContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.landingText{
+    flex: 0.5;
+    padding: 20px;
+}
+.landingText p:first-child {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.landingText p:nth-child(2){
+    font-size: 36px;
+    font-weight: 700;
+}
+.landingImage{
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    background: none;
+}
+.landingImage .coverImage{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+
+.landingAddOn{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background:#57606f;
+    clip-path: circle(600px at right);
+}
+.button{
+    padding: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 28px;
+    background: #1e272e;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+/*  */
+#skills{
+    min-height: 100vh;
+    padding: 20px;
+}
+#skills h1,#education h1{
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #485460;
+    font-weight: 800;
+}
+.bar{
+    height: 5px;
+    width: 160px;
+    background: black;
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-bottom: 40px;
+}
+.e_bar{
+    height: 5px;
+    width: 240px;
+    background: black;
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-bottom: 40px;
+}
+.skillsContainer{
+    /* background: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box{
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+
+    border-left: 3px solid #1e272e;
+    border-right: 7px solid #485460;
+    border-radius: 50%;
+    transition: all 0.5s;
+
+}
+.box img{
+    height: 64px;
+    width: 64px;
+}
+.box:hover{
+    cursor: pointer;
+    background: #34495e;
+}
+/*  */
+#education{
+    min-height: 80vh;;
+}
+.educationContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 24px;
+    flex-wrap: wrap;
+}
+.school p:first-child,.highschool p:first-child,.bsc p:first-child{
+    background: #1abc9c;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.grade{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0px;
+    background: #16a085;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+}
+.institute{
+    margin: 10px 0px;
+    font-size: 30px;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    color: #2c3e50;
+    padding: 15px;
+}
+.location{
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    margin: 10px 0px;
+    text-align: center;
+    padding: 15px;
+    color: #74b9ff;
+}
+
+/*  */
+#footer{
+    min-height: 40vh;
+    background: #000000;
+}
+.contact{
+    /* background: red; */
+    padding: 20px;
+}
+.contact p{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+.socialLinks{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.socialLinks img{
+    height: 48px;
+    width: 48px;
+    border-radius: 0;
+    transform: scale(0.7);
+}
+.socialLinks ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+li{
+    margin: 25px 0px;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: row;
+    color: wheat;
+    align-items: flex-end;
+    justify-content: center;
+    border-top: 2px solid white;
+    /* background: blue; */
+    height: 80px;
+}
+.fname{
+    text-transform: uppercase;
+    color: #778ca3;
+    margin:0px 20px;
+}
+.lname{
+    color: #a55eea;
+    text-transform: uppercase;
+    margin: 0px 20px;
+}
