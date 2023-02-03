@@ -44,10 +44,10 @@ td a {
     background: none;
 }
 
-/* tbody tr:hover {
+tbody tr:hover {
     background: #fffb;
     cursor: pointer;
-} */
+}
 
 thead {
     display: block;
